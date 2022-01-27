@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="pablo"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-01-10 04:41:09 "/>
+        <attribute name="created" value="cGFibG87REVTS1RPUC1RSUtOSDZVOzIwMjItMDEtMTA7IjA0OjI2OjE3ICI7MjgxMA=="/>
+        <attribute name="edited" value="cGFibG87REVTS1RPUC1RSUtOSDZVOzIwMjItMDEtMTA7IjA0OjQxOjA5ICI7MTsyOTE2"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Nome" type="String" array="False" size=""/>
+            <declare name="Nota, Soma, N" type="Integer" array="False" size=""/>
+            <declare name="Media" type="Real" array="False" size=""/>
+            <assign variable="N" expression="1"/>
+            <assign variable="Soma" expression="0"/>
+            <output expression="&quot;Qual o seu nome? &quot;" newline="True"/>
+            <input variable="Nome"/>
+            <while expression="N&lt;=4">
+                <output expression="&quot;Qual a sua &quot; &amp;N &amp;&quot;a nota?&quot;" newline="True"/>
+                <input variable="Nota"/>
+                <assign variable="Soma" expression="Soma + Nota"/>
+                <assign variable="N" expression="N + 1"/>
+            </while>
+            <assign variable="Media" expression="Soma / 4"/>
+            <output expression="&quot;A media de &quot; &amp;Nome &amp;&quot; e igual a &quot; &amp;Media" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
